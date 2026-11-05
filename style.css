@@ -307,9 +307,30 @@ h2 {
     font-size: 2rem;
   }
 
+  /* Меню: логотип сверху, пункты переносятся в две строки по центру */
+  .header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 16px;
+    max-width: 100%;
+  }
+
   .nav a {
-    margin-left: 12px;
-    font-size: 0.85rem;
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  /* Кнопка «К программе» — на всю ширину */
+  .hero .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
   section {
